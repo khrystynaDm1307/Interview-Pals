@@ -1,0 +1,98 @@
+.wpembed-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    cursor: default;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 2;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.wpembed-content {
+    order: 2;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+}
+.wpembed-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1.5em;
+    width: 64%;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+h1 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.375em;
+}
+.index+h2, p+h2, ul+h2 {
+    padding-top: 0.5em;
+}
+h2 {
+    font-size: 27px;
+}
+p a, a:hover {
+    background: 0 0;
+    color: #06c;
+    outline: 0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+p, ul, ol {
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2;
+    color: #333;
+    font-weight: 400;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 0;
+}
+
+li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+ol {
+    list-style-type: decimal;
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li a, li a:hover {
+    font-size: 18px;
+    background: 0 0;
+    color: #06c;
+    outline: 0;
+    text-decoration: none;
+}

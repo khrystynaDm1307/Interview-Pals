@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+$blue-color:#3D92E1;
+$primary:#257AC8;
+$blue-overlay-color: #9C89FF26;
+$light-blue-color:#3D92E180;
+$orange-color:#FF8514;
+$white-color:#FFFFFF;
+$light-gray-color:#E8EDF0;
+$gray-color: #BCC7D1;
+$dirty-gray:#8D989D;
+$dark-gray: #3A3F4D;
+$coral-color: #FF6666;
+$green-color: #33CC99;
+
+$poppins-font:'Poppins';
+
+button:hover{
+cursor: pointer;
+}
+h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+@media only screen and (max-width:385px) {
+     h2{
+        font-size: 35px;
+        text-align: center;
+    }
+ }

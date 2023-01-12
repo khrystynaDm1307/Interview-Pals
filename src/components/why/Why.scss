@@ -1,0 +1,190 @@
+@import '../../styles.scss';
+
+.box{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    background-color: $white-color;
+    z-index: 0;
+}
+.circular-blue{
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    border-radius: 50%;
+    background-color: $primary;
+    bottom: -240px;
+    left: -100px;
+    z-index: 0;
+}
+.orange-border{
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    border-radius: 50%;
+    border: 2px dashed $orange-color;
+    top: -240px;
+    right: -230px;
+}
+.orange-border-second{
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    border-radius: 50%;
+    border: 2px dashed $orange-color;
+    top: -190px;
+    right: -280px;
+    z-index: 0;
+}
+.orange-circ{
+    width: 50px;
+    height: 50px;
+    background-color: $orange-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 144px;
+    right: 322px;
+    z-index: 0;
+}
+.circ-box{
+    width: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+}
+.circ-box div{
+    width: 20px;
+    height: 20px;
+    background-color: $primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.why-header{
+ text-align: center;
+ margin-top: 50px;
+ font-family: $poppins-font;
+ color:$dark-gray;
+ position: relative;
+ z-index: 20;
+}
+.why-header h2{
+    font-weight: 700;
+    font-size: 50px;
+  position: relative;
+  z-index: 20;
+}
+.why-header h3{
+    font-weight: 500;
+    position: relative;
+    z-index: 20;
+}
+.benefits-box{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+.benefit{
+    width: 341px;
+    height: 330px;
+    background-color: $white-color;
+    border: 1px solid rgb(236, 236, 236);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+margin: 20px 10px;
+z-index: 2;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+padding: 15px;
+}
+.benefit-header{
+    color: $primary;
+    font-family: $poppins-font;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0;
+  
+    text-align: center;
+}
+.benefit-desc{
+    color: $dark-gray;
+    font-family: $poppins-font;
+    font-weight: 500;
+  font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    height: 120px;
+    margin-bottom: 0;
+}
+
+.benefit-icon{
+    width: 64px;
+    height: 64px;
+}
+.software{
+    background: url("../../shared/images/benefits-sprites.png") -153px -5px;
+}
+.feedback{
+    background: url("../../shared/images/benefits-sprites.png") -79px -5px;
+}
+.recorder{
+    background: url("../../shared/images/benefits-sprites.png") -153px -79px;;
+}
+.experts{
+    background: url("../../shared/images/benefits-sprites.png") -79px -79px;
+}
+.fees{
+    background: url("../../shared/images/benefits-sprites.png") -5px -79px;
+}
+.checklist{
+    background: url("../../shared/images/benefits-sprites.png") -5px -5px;
+}
+
+@media only screen and (max-width: 1420px) {
+ .orange-circ{
+     display: none;
+ }
+ }
+ @media only screen and (max-width: 1060px) {
+    .orange-circ,.orange-border,.orange-border-second{
+        display: none;
+    }
+    }
+ @media only screen and (max-width: 1100px) {
+    .benefits-box{
+        justify-content: space-around;
+    }
+    }
+    @media only screen and (max-width: 380px) {
+        .benefit{
+            width: 260px;
+            height: 380px;
+        }
+        .benefit:nth-of-type(2){
+            height: 400px;
+        }
+        .benefit:nth-of-type(3){
+            height: 320px;
+        }
+        }
+        @media only screen and (max-width: 750px) {
+            .circular-blue{
+                width: 480px;
+                height: 480px;
+                bottom: -101px;
+                left: -110px;
+            }
+        
+        }
